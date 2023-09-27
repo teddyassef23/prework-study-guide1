@@ -25,3 +25,14 @@ console.log('Here are the topics we learned through Prework:');
 listTopics();
 console.log('Which topic should we study first?');
 selectTopic();
+
+$(function(){
+  $(window).scroll(function(){
+    var winTop = $(window).scrollTop();
+    if(winTop >= 30){
+      $("body").addClass("sticky-header");
+    }else{
+      $("body").removeClass("sticky-header");
+    }//if-else
+  });//win func.
+});//ready func.
