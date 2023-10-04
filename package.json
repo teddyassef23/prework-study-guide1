@@ -1,5 +1,22 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "bootstrap": "^5.3.2",
+    "cors": "^2.8.5",
+    "experss": "^0.0.1-security"
+  },
+  "name": "prework-study-guide1",
+  "description": "This Study Guide was created for boot camp students who were going through the Prework. It contains notes on HTML, CSS, git, and JavaScript.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }

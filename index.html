@@ -22,27 +22,12 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
 <body>
     <!-- Page Preloder -->
     <div id="preloder">
-        <div class="loader">
-            <div id="google_translate_element"></div>
- 
-            <script type="text/javascript">
-                         function googleTranslateElementInit() 
-                         {
-                             new google.translate.TranslateElement
-                             (
-                               {
-                                  pageLanguage: 'en'
-                               },
-                                 'google_translate_element' 
-                            );
-                         }
-                </script>
-        </div>
+        <div class="loader"></div>
     </div>
+
 
     <!-- Humberger Begin -->
     <div class="humberger__menu__overlay"></div>
@@ -52,12 +37,15 @@
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                <li><a href="#"><i class="fa fa-heart"></i> <span></span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>10</span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
         </div>
         <div class="humberger__menu__widget">
+
+
+
             <div class="header__top__right__language">
                 <img src="img/language.png" alt="">
                 <div>English</div>
@@ -71,6 +59,10 @@
                 <a href="#"><i class="fa fa-user"></i> Login</a>
             </div>
         </div>
+
+              <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+                         cb=googleTranslateElementInit">
+            </script>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
                 <li class="active"><a href="./index.html">Home</a></li>
@@ -80,10 +72,12 @@
                         <li><a href="./shop-details.html">Shop Details</a></li>
                         <li><a href="./shoping-cart.html">Shoping Cart</a></li>
                         <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                    </ul>
+                      </ul>
                 </li>
                 <li><a href="./blog.html">Blog</a></li>
+                <ul class="header__menu__dropdown">
+                    <li><a href="./blog-details.html">Blog Details</a></li>
+                </ul>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -95,36 +89,24 @@
             <a href="#"><i class="fa fa-pinterest-p"></i></a>
         </div>
         <div class="humberger__menu__contact">
-            <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Free Shipping for all Order of $99</li>
-            </ul>
+
         </div>
     </div>
     <!-- Humberger End -->
-    <div id="google_translate_element"></div>
- 
-    <script type="text/javascript">
-                 function googleTranslateElementInit() 
-                 {
-                     new google.translate.TranslateElement
-                     (
-                       {
-                          pageLanguage: 'en'
-                       },
-                         'google_translate_element' 
-                    );
-                 }
-        </script>
+
+
+
     <!-- Header Section Begin -->
-     <!-- Header Section Begin -->
-     <header class="header">
+    <header class="header">
         <div class="header__top">
             <div class="container">
                 <div class="row">
+
+
+                    <!-- top__left Start -->
                     <div class="col-lg-6">
                         <div class="header__top__left">
-                                                 <div id="google_translate_element"></div>
+                            <div id="google_translate_element"></div>
  
                          <script type="text/javascript">
                                       function googleTranslateElementInit() 
@@ -132,7 +114,7 @@
                                           new google.translate.TranslateElement
                                           (
                                             {
-                                               pageLanguage: 'en'
+                                               pageLanguage: 'Am'
                                             },
                                               'google_translate_element' 
                                          );
@@ -140,6 +122,9 @@
                              </script>
                         </div>
                     </div>
+                    <!-- top__left end -->
+
+                    <!-- top__right Start -->
                     <div class="col-lg-6">
                         <div class="header__top__right">
                             <div class="header__top__right__social">
@@ -147,6 +132,7 @@
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-linkedin"></i></a>
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                
                             </div>
                             <div class="header__top__right__language">
                                 <img src="img/language.png" alt="">
@@ -155,19 +141,18 @@
                                 <ul>
                                     <li><a href="#">Spanis</a></li>
                                     <li><a href="#">English</a></li>
-                                    <li><a href="#">Amharic</a></li>
-                                    
-
-                                    
-                                    
-
+                                    <li><a href="#">Amharic</a></li>                                  
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
                                 <a href="#"><i class="fa fa-user"></i> Login</a>
+                                
                             </div>
                         </div>
                     </div>
+                    <!-- top__right end -->
+
+
                 </div>
             </div>
         </div>
@@ -181,7 +166,7 @@
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
+                            <li  class="active"><a href="./index.html">Home</a></li>
                             <li><a href="./shop-grid.html">Shop</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
@@ -192,7 +177,7 @@
                                 </ul>
                             </li>
                             <li><a href="./blog.html">Blog</a></li>
-                            <li class="active"><a href="./contact.html">Contact</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -212,7 +197,6 @@
         </div>
     </header>
     <!-- Header Section End -->
-
 
     <!-- Hero Section Begin -->
     <section class="hero">
@@ -800,9 +784,9 @@
                         <div class="footer__copyright__text">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | <i
-                                    class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                    target="_blank">Colorlib</a>
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
@@ -826,6 +810,15 @@
 
 
 
+</body>
+
+ius neque, voluptate voluptatibus
+nostrum!</p>
+
+</section>
+</div>
+
+</div>
 </body>
 
 </html>
